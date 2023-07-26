@@ -168,8 +168,9 @@ void showGraph(Year* year) {
             if (key == KEY_UP) {
                 if (currentYear->previousYear != NULL) {
                     currentYear = currentYear->previousYear;
-                    year_num--;
-
+                    if (year_num > 1) {
+                        year_num--;
+                    }
                 }
             }
             else if (key == KEY_DOWN) {
