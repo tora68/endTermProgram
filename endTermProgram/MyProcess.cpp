@@ -52,7 +52,7 @@ void outputPopulation(Year* firstYear) {
     }
 }
 
-// 各世代の人口割合を格納した２次元の配列を作成する
+// 各世代の人口割合を計算する
 void calculatePercentage(Year* firstYear) {
     Year* currentYear = firstYear;
 
